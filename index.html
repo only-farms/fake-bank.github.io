@@ -2,7 +2,7 @@
 <html>
   <head>
     <script>
-      const data = {"blank": "blank"};
+      let data = {"blank": "blank"};
       window.onload = function () {
           const root = document.getElementById("root")
 
@@ -13,9 +13,7 @@
 
           fetch('data.json')
             .then(d => {
-              console.log('d: ', d)
-              // let data = d
-              alert(data)
+              data = d
             })
 
           const jsonString = JSON.stringify(data)
