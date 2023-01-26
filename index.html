@@ -1,7 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+      const data = {"blank": "blank"};
+      window.onload = function () {
+          const root = document.getElementById("root")
+
+          if(!root) {
+            console.log("root is false: ", root)
+            return
+          }
+
+          fetch('data.json')
+            .then(d => {
+              console.log('d: ', d)
+              // let data = d
+              alert(data)
+            })
+
+          const jsonString = JSON.stringify(data)
+          const textNode = document.createTextNode(jsonString)
+          root.appendChild(textNode)
+        }
+    </script>
   </head>
   <body>
+    <div id="root"></div>
   </body>
 </html>
