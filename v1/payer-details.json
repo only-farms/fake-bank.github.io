@@ -1,0 +1,11 @@
+{
+    "archiveId": "20190524593156999999",
+    "amount": "10.00",
+    "debtorName": "Debbie Debtor",
+    "debtorAddress": {
+    "streetAddress": "Hallituskatu 22",
+        "postalCode": "90100",
+        "city": "Oulu",
+        "country": "FI"
+    }
+}
